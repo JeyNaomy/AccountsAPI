@@ -1,0 +1,42 @@
+Account 
+-properties
+--Id(int)
+--Name(string)
+--Status(yes/no)(string)
+--Balance(double)
+--DateCreated(DateTime)
+-Actions
+--UpdateBalance
+--UpdateStatus
+
+Dbcontext
+-AccountDbContext(property)
+--Configure(Action)
+
+Services
+-Dbcontext(property)(DI)
+Actions
+--Get Account(by Id)
+--Get AccountList (by paged)
+--Update Account
+--Delete Account
+--Insert
+
+Controllers
+-GetAccount by Id(Get)
+-GetAccounts(Get)
+-DeleteAccount(Delete)
+-Withdraw(id/ammount)(Patch)
+-Deposit(Patch)
+-CreateAccount(Post)
+
+Test
+Create folder(AccountApi),
+Move content except soln to the folder
+Update solution to point to the file
+Create Ms Test project
+
+
+
+
+
